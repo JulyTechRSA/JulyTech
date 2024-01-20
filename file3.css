@@ -1,0 +1,54 @@
+/* Input Styling with Placeholder Text */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+textarea {
+  margin-bottom: 10px; /* Adjust the vertical spacing between inputs and textareas */
+  padding: 12px; /* Adjust the padding inside inputs and textareas */
+  width: 100%; /* Make the inputs and textareas take full width */
+}
+
+/* Add Placeholder Text */
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="tel"]::placeholder,
+input[type="url"]::placeholder,
+textarea::placeholder {
+  color: black; /* Adjust the color of the placeholder text */
+}
+
+/* Checkbox and Radio Input Styling */
+input[type="checkbox"],
+input[type="radio"] {
+  margin: 0 10px 0 0; /* Adjust the spacing around checkboxes and radios */
+}
+
+/* Label Styling */
+label {
+  margin-bottom: 8px; /* Adjust the vertical spacing between labels */
+}
+
+/* Field Width and Layout */
+.grunion-field-width-25-wrap,
+.grunion-field-width-50-wrap,
+.grunion-field-width-75-wrap {
+  margin-bottom: 20px; /* Adjust the vertical spacing between field width options */
+}
+
+/* Button Styling */
+[type="submit"],
+button:not([type="reset"]) {
+  margin-top: 20px; /* Adjust the spacing above the submit button */
+}
+
+/* Media Queries */
+@media only screen and (min-width: 600px) {
+  input[type="email"],
+  input[type="tel"],
+  input[type="text"],
+  input[type="url"] {
+    
+    width: 48%; /* Adjust the width of inputs on larger screens */
+  }
+}
